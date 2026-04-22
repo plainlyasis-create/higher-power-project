@@ -1,6 +1,8 @@
 function showTradition(event, key) {
   const t = traditions[key];
 
+  document.body.style.background = t.color;
+
   document.querySelectorAll(".card").forEach(btn => btn.classList.remove("active"));
   event.target.classList.add("active");
 
