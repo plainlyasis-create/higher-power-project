@@ -25,6 +25,11 @@ header {
   gap: 10px;
 }
 
+.card.active {
+  background: #cbbfae;
+  font-weight: bold;
+}
+
 .card {
   padding: 15px;
   border: none;
@@ -36,6 +41,7 @@ header {
 
 .card:hover {
   background: #d8cfc2;
+  transform: translateY(-2px);
 }
 
 /* RIGHT PANEL */
@@ -58,4 +64,18 @@ header {
   background: #e7dccb;
   border-radius: 5px;
   font-size: 12px;
+}
+
+.panel h3 {
+  margin-top: 15px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .grid, .panel {
+    width: 100%;
+  }
 }
